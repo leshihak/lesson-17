@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="clock-up">
+      <div class="clock-up_date">00.00.0000</div>
+      <div class="clock-up-time">00:00:00</div>
+    </div>
+
+    <div class="clock-center">
+      <div class="clock-center_left">
+        <div class="clock-center_left--time">0:0:0:000</div>
+        <div class="clock-center_left--buttons">
+          <button class="clock-center_start" onclick="timer()">start</button>
+          <button class="clock-center_loop" onclick="loop()">loop</button>
+          <button class="clock-center_stop" onclick="stop()">stop</button>
+          <button class="clock-center_reset" onclick="reset()">reset</button>
+        </div>
+      </div>
+
+      <div class="clock-center_right">
+        <div class="clock-center_right-value"></div>
+      </div>
+    </div>
+
+    <div class="clock-down">
+      <div class="clock-down_left">
+        <div class="clock-down_left--minutes">25</div>
+        <div class="clock-down_left--txt">minutes</div>
+        <div class="clock-down_left--buttons">
+          <button class="clock-down_increase" onclick="increase()">+</button>
+          <button class="clock-down_decrease" onclick="decrease()">-</button>
+        </div>
+      </div>
+
+      <div class="clock-down_right">
+        <div class="clock-down_right--time">00:00</div>
+        <div class="clock-down_right--buttons">
+          <button class="clock-right_start" onclick="timing()">start</button>
+          <button class="clock-right_stop" onclick="stopMinutes()">stop</button>
+          <button class="clock-right_reset" onclick="resetMinutes()">reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
